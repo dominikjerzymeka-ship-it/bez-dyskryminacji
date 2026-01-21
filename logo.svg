@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="240" height="72" viewBox="0 0 240 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="72" rx="12" fill="#0b0b0b"/>
+  <rect x="8" y="8" width="56" height="56" rx="8" fill="#ff8c00"/>
+  <path d="M26 20 L35 36 L17 36 Z" fill="#0b0b0b"/>
+  <text x="76" y="42" fill="#ffd" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Stop Dyskryminacji</text>
+</svg>

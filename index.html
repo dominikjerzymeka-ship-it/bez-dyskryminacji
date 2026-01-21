@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Stop Dyskryminacji</title>
+  <meta name="description" content="Stop Dyskryminacji — miejsce, by dowiedzieć się czym jest dyskryminacja i dzielić się historiami.">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Optional: uncomment to use a Google Font -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet"> -->
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <!-- Inline SVG logo -->
+        <img src="logo.svg" alt="Stop Dyskryminacji — logo" class="logo" />
+        <div class="site-title">
+          <h1>Stop Dyskryminacji</h1>
+          <p class="tagline">Przeciwdziałajmy uprzedzeniom. Dziel się historią, szukaj wsparcia.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>Czym jest dyskryminacja?</h2>
+      <p>Dyskryminacja to odmienianie, wykluczanie lub gorsze traktowanie osoby lub grupy osób z powodu cech takich jak: rasa, pochodzenie etniczne, płeć, orientacja seksualna, wiek, niepełnosprawność, religia czy status społeczny. Dyskryminacja może być jawna lub subtelna (np. uprzedzenia, wykluczenie z okazji lub odmowa usług).</p>
+    </section>
+
+    <section id="types" class="card">
+      <h2>Rodzaje dyskryminacji</h2>
+      <ul>
+        <li><strong>Rasowa</strong> — uprzedzenia i niesprawiedliwe traktowanie ze względu na rasę lub kolor skóry.</li>
+        <li><strong>Etniczna / narodowa</strong> — ataki lub wykluczenie ze względu na pochodzenie etniczne lub narodowość.</li>
+        <li><strong>Płciowa</strong> — nierówne traktowanie ze względu na płeć lub tożsamość płciową.</li>
+        <li><strong>Wiekowa</strong> — uprzedzenia wobec osób młodszych lub starszych.</li>
+        <li><strong>Niepełnosprawność</strong> — bariery i złe traktowanie osób z niepełnosprawnościami.</li>
+        <li><strong>Religijna</strong> — dyskryminacja ze względu na wyznanie lub brak wyznania.</li>
+        <li><strong>Inne</strong> — orientacja seksualna, status społeczny, język itd.</li>
+      </ul>
+    </section>
+
+    <section id="examples" class="card">
+      <h2>Przykłady dyskryminacji</h2>
+      <p>Przykładowe sytuacje to: odmowa wynajmu mieszkania ze względu na narodowość, nieprzyjmanie do pracy z powodu koloru skóry, wyśmiewanie lub wykluczanie w miejscu nauki, przemoc słowna lub fizyczna motywowana uprzedzeniem.</p>
+      <p>Wiele form dyskryminacji jest zakazanych prawem, ale nie wszystkie sytuacje są jednoznaczne — ważne jest dokumentowanie i szukanie wsparcia.</p>
+    </section>
+
+    <section id="share" class="card">
+      <h2>Podziel się swoją historią</h2>
+      <p>Jeśli doświadczyłeś(-aś) dyskryminacji i chcesz opisać swoją historię, możesz to zrobić poniżej. Twoja historia może pomóc innym poczuć się mniej samotnie i zwiększyć świadomość.</p>
+
+      <form id="story-form" class="story-form" autocomplete="off">
+        <label for="name">Twoje imię (opcjonalnie)</label>
+        <input id="name" name="name" placeholder="Imię lub nick (opcjonalnie)" />
+
+        <label for="title">Tytuł historii</label>
+        <input id="title" name="title" placeholder="Krótki tytuł" required />
+
+        <label for="story">Twoja historia</label>
+        <textarea id="story" name="story" rows="6" placeholder="Opisz co się stało, kiedy i jak to wpłynęło na Ciebie..." required></textarea>
+
+        <label for="consent" class="checkbox">
+          <input id="consent" type="checkbox" required />
+          Wyrażam zgodę na opublikowanie historii (bez ujawniania danych osobowych osób trzecich).
+        </label>
+
+        <button type="submit" class="btn">Opublikuj historię</button>
+      </form>
+    </section>
+
+    <section id="comments" class="card">
+      <h2>Historie i komentarze</h2>
+      <div id="comments-list" class="comments-list" aria-live="polite">
+        <!-- komentarze pojawią się tutaj -->
+      </div>
+
+      <p class="muted">Aktualnie komentarze są przechowywane lokalnie w Twojej przeglądarce (tryb demo). Aby opublikować komentarze publicznie, podłącz serwis komentarzy (instrukcja poniżej).</p>
+    </section>
+
+    <section id="resources" class="card">
+      <h2>Wsparcie i zasoby</h2>
+      <ul>
+        <li>Jeśli jesteś w niebezpieczeństwie — zadzwoń na lokalne numery alarmowe.</li>
+        <li>Szukaj organizacji działających na rzecz praw człowieka i pomocy prawnej w Twoim kraju.</li>
+        <li>Jeśli chcesz, możesz pozostać anonimowy(-a) — nie wymagam danych osobowych w publikacjach.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Stop Dyskryminacji — inicjatywa społeczna. Strona edukacyjna.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- Przykład: Utterances (zakomentowane; wymaga utworzonego repozytorium) -->
+  <!--
+  <script src="https://utteranc.es/client.js"
+    repo="TWÓJ-GITHUB-USER/TWÓJ-REPO"
+    issue-term="pathname"
+    label="komentarze"
+    theme="github-dark"
+    crossorigin="anonymous"
+    async>
+  </script>
+  -->
+
+  <!-- Przykład: Giscus (zakomentowane; wymaga repozytorium i Discussions) -->
+  <!--
+  <script src="https://giscus.app/client.js"
+    data-repo="TWÓJ-GITHUB-USER/TWÓJ-REPO"
+    data-repo-id="REPO_ID"
+    data-category="Announcements"
+    data-category-id="CATEGORY_ID"
+    data-mapping="pathname"
+    data-theme="dark"
+    crossorigin="anonymous"
+    async>
+  </script>
+  -->
+</body>
+</html>
